@@ -7,12 +7,81 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<div class="box">
+    Data : <br/> 
+    <span>NIP</span>: {{nip}} <br/>
+    <span>Nama</span>: {{nama}} <br/>
+    <span>Status</span>: {{stat}}
+</div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <!--div class="head">
+    <ion-card (tap)="presentActionSheet()">
+      <ion-card-content>
+      Aplikasi E-Learning GOES <br/>
+      (Guide Objective Elementary School)  
+      </ion-card-content>
+    </ion-card>
+  </div-->
+  
+  
+  <div class="wrap-mapel">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="ios-flask" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        IPA
+        <button ion-button item-end (tap)="presentActionSheet()">Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="md-globe" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        IPS
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-book" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        PPKN
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="md-medal" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        Bahasa Indonesia
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="md-pie" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        Matematika
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-flower" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        Bahasa Inggris
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-nutrition" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        PJOK
+        <button ion-button item-end>Download </button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="md-medal" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        SBK
+        <button ion-button item-end>Download</button>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="ios-planet-outline" item-start></ion-icon>
+        <h4> Mata Pelajaran</h4>
+        PLJK
+        <button ion-button item-end>Download </button>
+      </ion-item>
+    </ion-list>
+    </div>
 </ion-content>
+

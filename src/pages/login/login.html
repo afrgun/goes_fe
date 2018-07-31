@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="box head" [style.height.px]="HeightTop">
+    <ion-card>
+      <ion-card-content>
+      Aplikasi E-Learning GOES <br/>
+      (Guide Objective Elementary School)  
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="box" [style.height.px]="HeightBox">
+    <img src="assets/img/logo.png" alt="logo" />
+  </div>
+  <div class="box" [style.height.px]="HeightBox">
+    <div class="manip">
+      <form #LoginForm="ngForm">
+          <ion-list class="login-box">
+            <ion-item>
+              <ion-input class="border-bottom" [(ngModel)]="userData.kd_guru" name="kd" type="text" placeholder="NIP/NIS" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input class="border-bottom2" [(ngModel)]="userData.pass_guru" name="password" type="password" placeholder="Password" required></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <button ion-button class="btn-login" (tap)="doLogin(LoginForm)" type="submit"> Login</button>
+      </form>
+    </div>
+  </div>
+</ion-content>

@@ -1,3 +1,106 @@
 page-home {
+    ion-card{ 
+        background: rgba(0, 0, 0, 0.1) !important; 
+        margin: 0 10px 10px !important;
+        border-radius: 5px !important;
+    }
 
+    ion-card-content{ font-size: 1.7rem !important; color: #ffffff; }
+
+    .head{ 
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .box{
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        margin-top: 55px;
+        background: #3596c9;
+        padding: 10px;
+        border-bottom: 10px solid #ffc787;
+        line-height: 25px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 115%;
+
+        span{
+            width: 20%;
+            max-width: 20%;
+            display: inline-block;
+        }
+    }
+
+    .wrap-mapel{
+        margin: 5px auto 0;
+        padding-top: 125px;
+        //width: 80%;
+        //display: flex;
+        //flex-direction: row;
+        //flex-wrap: wrap;
+
+        ion-item{
+            min-height: 70px;
+            border-bottom: 1px solid #dedede;
+
+            .item-inner{ border: none !important; }
+
+            ion-label{ font-weight: bold; }
+
+            h4{     
+                margin-bottom: 10px;
+                color: #8c8c8c; 
+            }
+
+            ion-icon{
+                font-size: 4.5rem;
+                margin-bottom: 10px;
+                color: #83c651;
+            }
+        }
+
+        .mapel{
+            max-width: 50%;
+            width: 50%;
+            padding: 10px;
+
+            .button-inner{ flex-direction: column; }
+
+            button{ height: inherit; width: 100%; padding: 5px 0px 10px; border-radius: 5px; background-color: #d86a21; }
+
+            ion-icon, p{
+                display: block;
+                margin: 0;
+            }
+
+            
+        }
+    }
+}
+
+.action-sheet-wrapper{
+    .action-sheet-group{
+        max-height: 400px;
+        overflow: scroll !important;
+
+        &:first-child{ padding: 0 !important; }
+
+        .action-sheet-button.catCustom{
+            background: #3596c9 !important;
+            color: #ffffff;
+            border-bottom: 1px solid #9e9e9e;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+            min-height: 5.5rem;
+
+            &:last-child{
+                border: none;
+            }
+
+            &.cancel{
+                border: none;
+            }
+        }
+    }
 }

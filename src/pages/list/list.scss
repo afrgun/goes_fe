@@ -1,3 +1,28 @@
 page-list {
+    ion-card{ 
+        background: #03A9F4 !important; 
+        margin: 0 10px 10px !important;
+        border-radius: 5px !important;
+    }
 
+    ion-card-content{ font-size: 1.7rem !important; color: #ffffff; }
+
+    .head{ 
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .box{
+        span{
+            width: 20%;
+            max-width: 20%;
+            display: inline-block;
+        }
+    }
+
+    p{
+        padding: 0px 15px;
+        line-height: 25px;
+        text-align: justify;
+    }
 }
